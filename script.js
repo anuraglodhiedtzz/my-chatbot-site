@@ -19,7 +19,7 @@ async function sendMessage() {
     document.getElementById("user-input").value = "";
 
     try {
-        const response = await fetch("https://anuragaiassistant.app.n8n.cloud/webhook/d9e2e695-c980-43e8-a06f-60cd476e762e/chat", {
+        const response = await fetch("https://anuragaiassistant.app.n8n.cloud/webhook/3a8bc2ef-a8ef-4d91-817e-5f91e9a00c25", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ message: userInput })
