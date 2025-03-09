@@ -18,7 +18,7 @@ function sendMessage() {
     displayMessage(userInput, "user");
     document.getElementById("user-input").value = "";
 
-    fetch("YOUR_N8N_WEBHOOK_URL", {  // Replace with your n8n webhook URL
+    fetch("https://anuragaiassistant.app.n8n.cloud/webhook/3a8bc2ef-a8ef-4d91-817e-5f91e9a00c25", {  // Replace with your n8n webhook URL
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userInput })
